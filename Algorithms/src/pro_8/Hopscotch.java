@@ -1,9 +1,9 @@
 package pro_8;
-
+//Math.maxë¥¼ í†µí•´ì„œ ê° ë°°ì—´ì˜ í•©ì„ ê³„ì† ë¹„êµí•¨ìœ¼ë¡œ êµ¬í•´ì£¼ëŠ” ë°©ì‹
 class Hopscotch {
     int hopscotch(int[][] board, int size) {
         int result = 0;
-        // ÇÔ¼ö¸¦ ¿Ï¼ºÇÏ¼¼¿ä.
+        // í•¨ìˆ˜ë¥¼ ì™„ì„±í•˜ì„¸ìš”.
         for (int i = 0; i < size - 1; i++) {
         	
             board[i + 1][0] += Math.max(board[i][1], Math.max(board[i][2], board[i][3]));
@@ -18,7 +18,7 @@ class Hopscotch {
     public static void main(String[] args) {
         Hopscotch c = new Hopscotch();
         int[][] test = { { 1, 2, 3, 5 }, { 5, 6, 7, 8 }, { 4, 3, 2, 1 } };
-        //¾Æ·¡´Â Å×½ºÆ®·Î Ãâ·ÂÇØ º¸±â À§ÇÑ ÄÚµåÀÔ´Ï´Ù.
+        //ì•„ë˜ëŠ” í…ŒìŠ¤íŠ¸ë¡œ ì¶œë ¥í•´ ë³´ê¸° ìœ„í•œ ì½”ë“œì…ë‹ˆë‹¤.
         System.out.println(c.hopscotch(test, 3));
     }
 
