@@ -43,7 +43,7 @@ public class test {
 				}
 				//System.out.println("max"+max+"score"+max_num);
 			}
-			System.out.println("#"+testcase+" "+max_num+" "+max);
+			System.out.println("#"+testcase+" "+max_num);
 		}
 		
 		
