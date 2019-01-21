@@ -38,7 +38,7 @@ public class max_reward {
 		for(int i=0; i<M-1; i++) {
 			for(int j = i+1; j<M; j++) {
 				char[] testnum = swap(numset, i,j);
-				System.out.println("&&&&"+i+"&&&"+j+"&&&"+changetoNum(testnum));
+				//System.out.println("&&&&"+i+"&&&"+j+"&&&"+changetoNum(testnum));
 				if(!check[now+1][changetoNum(testnum)]) {
 					check[now+1][changetoNum(testnum)]= true;
 					dfs(testnum, now+1);
